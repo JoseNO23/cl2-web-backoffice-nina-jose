@@ -16,4 +16,23 @@ public record FilmDetailDto(
         String rating,
         String specialFeatures,
         Date lastUpdate) {
+
+    public static FilmDetailDto empty() {
+        return new FilmDetailDto(
+                null, // filmId
+                null, // title
+                null, // description
+                null, // releaseYear
+                null, // languageId
+                null, // languageName
+                null, // rentalDuration
+                null, // rentalRate
+                null, // length
+                null, // replacementCost
+                null, // rating
+                null, // specialFeatures
+                null  // lastUpdate
+        );
+    }
+
 }
